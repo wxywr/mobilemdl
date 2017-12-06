@@ -1,5 +1,7 @@
 /*背景颜色--公共*/
 .bgColor{
+	height:100%;
+	width:100%;
     background: #FFEDBC;  
     background: -webkit-linear-gradient(to top, #ED4264, #FFEDBC); 
     background: linear-gradient(to top, #ED4264, #FFEDBC); 
