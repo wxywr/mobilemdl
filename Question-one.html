@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no" />
+    <meta content="email=no" name="format-detection" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>美德乐--题一</title>
+	<link rel="stylesheet" href="css/app_reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bgColor">
+	<div class="main_body">
+
+		<div class="m_bom"><!-- 1.5间距块 --></div>
+
+		<div class="ques_con">
+			<h2>问题一</h2>
+			<h3>您最喜欢新产品的哪些特点？</h3>
+			<form id="form">
+				<p class="line"><input type="radio" name="sex" id="d1"><i class="dd"></i>&nbsp;<label for="d1">质量好</label></p>
+				<p class="line"><input type="radio" name="sex" id="d2"><i class="dd"></i>&nbsp;<label for="d2">价格便宜</label></p>
+				<p class="line"><input type="radio" name="sex" id="d3"><i class="dd"></i>&nbsp;<label for="d3">速度快</label></p>
+
+				<div class="m_bon"><!-- 1/间距块 --></div>
+
+				<p><input type="button" value="下一题" class="btn"></p>
+			</form>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script>
+	$(function(){
+		$("input[type='button']").click(function(){
+			if($("input[type='radio']").is(':checked')) {
+			    window.location.href="Question-two.html";
+			}
+			else{
+				alert('亲，你想交白卷吗？');
+			}
+		})	
+	})
+</script>
+</html>
